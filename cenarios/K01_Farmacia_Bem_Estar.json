@@ -1,0 +1,358 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K01",
+  "titulo": "Farmácia Bem-Estar (6 pessoas, maturidade boa, tarefas de alto risco)",
+  "descricao": "Farmácia de bairro. A farmacêutica-gestora Rita é a única com nível 3 em \"Conferir resultados e decidir\" (C02). Dispensação de receitas e pedido de reposição têm risco alto. Jair (entregador, prontidão baixa) tem um diagnóstico de criticidade baixa. 4 h/semana, R$ 100, até 3 ações.",
+  "o_que_observar": [
+    "Dispensação (T01) e reposição (T03) têm risco alto → preservação em todas as ações dessas tarefas",
+    "Planejar reposição era automação, mas com risco 2 deve virar aumento",
+    "Orientar cliente no balcão (Q2 empatia) não gera capacitação",
+    "Bia já tem nível 3 em C05: sem ação para posts",
+    "Paulo aprende \"conferir e decidir\" com Rita (única nível 3) — Aprendizagem entre pares",
+    "Com só 3 vagas, as ações de criticidade 3 na dispensação (D01, D07) deveriam vir antes da preparação cultural de Jair (criticidade 1, tarefa de baixo risco)",
+    "Rita não deveria ser colega-tutora de mais de 2 pessoas ao mesmo tempo no ciclo"
+  ],
+  "resultado_nos_testes": {
+    "v1": "6/7 expectativas",
+    "v2": "7/7 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K01",
+  "dados": {
+    "negocio": {
+      "loja": "Farmácia Bem-Estar",
+      "segmento": "Farmácia",
+      "dataBase": "2026-09-22",
+      "horas": 4,
+      "orcamento": 100,
+      "maxAcoes": 3,
+      "maturidade": [
+        2,
+        2,
+        3,
+        2
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Rita",
+        "funcao": "Farmacêutica responsável",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Paulo",
+        "funcao": "Balconista",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          1,
+          1,
+          1,
+          3,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Sônia",
+        "funcao": "Caixa",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          3,
+          2,
+          2,
+          2,
+          1,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E04",
+        "nome": "Léo",
+        "funcao": "Estoque",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          1,
+          2,
+          3,
+          1,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E05",
+        "nome": "Bia",
+        "funcao": "Atendimento online",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          2,
+          1,
+          1,
+          2,
+          3,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E06",
+        "nome": "Jair",
+        "funcao": "Entregador",
+        "gestor": "Não",
+        "prontidao": "Baixa",
+        "c": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        "obs": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Conferir receitas e interações",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T02",
+        "nome": "Responder disponibilidade no WhatsApp",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T03",
+        "nome": "Planejar reposição de medicamentos",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T04",
+        "nome": "Orientar cliente no balcão",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Sim",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T05",
+        "nome": "Posts de campanhas de saúde",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Sim",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E02",
+        "tarefa": "T01",
+        "comp": "C02",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E05",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 3,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E04",
+        "tarefa": "T03",
+        "comp": "C02",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D04",
+        "pessoa": "E06",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 1,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D05",
+        "pessoa": "E05",
+        "tarefa": "T05",
+        "comp": "C05",
+        "meta": 3,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D06",
+        "pessoa": "E02",
+        "tarefa": "T04",
+        "comp": "C04",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D07",
+        "pessoa": "E03",
+        "tarefa": "T01",
+        "comp": "C02",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D08",
+        "pessoa": "E01",
+        "tarefa": "T03",
+        "comp": "C01",
+        "meta": 3,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}

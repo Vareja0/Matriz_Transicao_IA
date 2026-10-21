@@ -1,0 +1,239 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K12",
+  "titulo": "Quitanda Verde (mesma competência diagnosticada em 3 tarefas)",
+  "descricao": "Fábio (prontidão alta) não usa IA (C01 = 0) e foi diagnosticado em C01 nas 3 tarefas em que a IA vai entrar. 6 h/semana, até 3 ações.",
+  "o_que_observar": [
+    "Fábio deveria ter UMA ação para desenvolver C01 (a competência é da pessoa; as tarefas são contexto de prática)",
+    "Tina (lacuna 1 em C01) entra no ciclo"
+  ],
+  "resultado_nos_testes": {
+    "v1": "0/2 expectativas",
+    "v2": "2/2 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K12",
+  "dados": {
+    "negocio": {
+      "loja": "Quitanda Verde",
+      "segmento": "Hortifrúti",
+      "dataBase": "2026-09-22",
+      "horas": 6,
+      "orcamento": 0,
+      "maxAcoes": 3,
+      "maturidade": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Gil",
+        "funcao": "Dono",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Fábio",
+        "funcao": "Atendente",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Tina",
+        "funcao": "Caixa",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        "obs": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Responder pedidos no WhatsApp",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T02",
+        "nome": "Montar lista de compras do CEASA",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T03",
+        "nome": "Criar cartazes de oferta",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E02",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E02",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E02",
+        "tarefa": "T03",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D04",
+        "pessoa": "E03",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}

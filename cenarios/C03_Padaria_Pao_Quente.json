@@ -1,0 +1,239 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "C03",
+  "titulo": "Padaria Pão Quente (fluxo completo do teste de interface)",
+  "descricao": "Padaria com 3 pessoas montada do zero no teste C03: 4 h/semana, R$ 0, até 2 ações, maturidade 1,2,1,1. Faixas de prontidão obtidas pelas respostas do teste (regras v2).",
+  "o_que_observar": [
+    "João (ansiedade e medo no máximo) fica com prontidão baixa e recebe preparação cultural.",
+    "\"Controlar estoque\" é automação rebaixada para aumento (risco 2) e gera preservação.",
+    "Marta já é nível 3 em estoque: sem lacuna, só preservação."
+  ],
+  "origem": "diagnostico.txt, Parte 1, cenário C03",
+  "dados": {
+    "negocio": {
+      "loja": "Padaria Pão Quente",
+      "segmento": "Padaria",
+      "dataBase": "2026-10-13",
+      "horas": 4,
+      "orcamento": 0,
+      "maxAcoes": 2,
+      "maturidade": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Ana Lima",
+        "funcao": "Proprietária",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          1,
+          1,
+          2,
+          3,
+          1,
+          2
+        ],
+        "obs": "",
+        "prep": ""
+      },
+      {
+        "id": "E02",
+        "nome": "João Reis",
+        "funcao": "Balcão",
+        "gestor": "Não",
+        "prontidao": "Baixa",
+        "c": [
+          0,
+          1,
+          0,
+          3,
+          0,
+          0
+        ],
+        "obs": "",
+        "prep": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Marta Dias",
+        "funcao": "Forno e produção",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          1,
+          2,
+          3,
+          2,
+          0,
+          0
+        ],
+        "obs": "",
+        "prep": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Controlar estoque",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T02",
+        "nome": "Responder dúvidas no WhatsApp",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T03",
+        "nome": "Atender cliente no balcão",
+        "ativa": "Sim",
+        "q1": "Sim",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E02",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E03",
+        "tarefa": "T01",
+        "comp": "C03",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E01",
+        "tarefa": "T02",
+        "comp": "C06",
+        "meta": 3,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D04",
+        "pessoa": "E03",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}

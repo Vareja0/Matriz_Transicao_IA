@@ -1,0 +1,252 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K02",
+  "titulo": "Pet Shop Patas (3 pessoas, maturidade digital muito baixa)",
+  "descricao": "Pet shop pequeno, quase sem registros digitais (maturidade 0,1,0,0 → média 0,25 → teto 1). O dono Marcos não usa IA (C01 = 0). Caio já tem nível 1 em C01 e meta 3. 2 h/semana, R$ 0, até 2 ações.",
+  "o_que_observar": [
+    "Teto 1: metas do ciclo limitadas a \"executa com apoio\"",
+    "Caio (C01 = 1, meta 3, criticidade 3) não recebe ação porque já atingiu o teto; a tela deveria dizer que a maturidade é o bloqueio (não \"Sem lacuna no ciclo\")",
+    "Com maturidade quase nula, o plano deveria indicar alguma ação para elevar a maturidade digital da loja (o teto bloqueia o desenvolvimento)",
+    "Marcos e Lia (C01 = 0) não usam IA: a ação deveria ser acompanhada (pares/experimentação/redesenho), não \"Mentoria por IA\" sozinha",
+    "Estoque de ração tem risco 3 → preservação para Caio mesmo sem lacuna"
+  ],
+  "resultado_nos_testes": {
+    "v1": "3/5 expectativas",
+    "v2": "5/5 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K02",
+  "dados": {
+    "negocio": {
+      "loja": "Pet Shop Patas",
+      "segmento": "Pet shop",
+      "dataBase": "2026-09-22",
+      "horas": 2,
+      "orcamento": 0,
+      "maxAcoes": 2,
+      "maturidade": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Marcos",
+        "funcao": "Dono",
+        "gestor": "Sim",
+        "prontidao": "Moderada",
+        "c": [
+          0,
+          1,
+          1,
+          3,
+          0,
+          1
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Lia",
+        "funcao": "Banho e tosa",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          0,
+          2,
+          1,
+          3,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Caio",
+        "funcao": "Vendas",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          1,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        "obs": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Agendar banho e tosa pelo WhatsApp",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T02",
+        "nome": "Controlar estoque de ração",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Não"
+      },
+      {
+        "id": "T03",
+        "nome": "Divulgar promoções",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E01",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E02",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E03",
+        "tarefa": "T02",
+        "comp": "C03",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D04",
+        "pessoa": "E03",
+        "tarefa": "T03",
+        "comp": "C01",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D05",
+        "pessoa": "E01",
+        "tarefa": "T02",
+        "comp": "C02",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K14",
+  "titulo": "EXTREMO — Mercadinho Começo: ninguém sabe usar IA",
+  "descricao": "Mercadinho sem nenhuma prática digital: maturidade 0,0,0,0 (teto 1). As 4 pessoas têm C01 = 0 (não usam IA) e ninguém tem nível 3 em nenhuma competência digital; prontidão moderada ou alta (querem aprender). 3 h/semana, R$ 0, até 3 ações.",
+  "o_que_observar": [
+    "Teto 1: meta do ciclo = 1 para todos (primeiro passo)",
+    "Ninguém usa IA: a ação não deveria ser \"Mentoria por IA\" sozinha (exige já saber usar IA)",
+    "Sem ninguém nível 3, o plano deveria indicar apoio externo (fornecedor, Sebrae, curso) — nenhuma ação interna é \"pares\"",
+    "Maturidade zero: o plano deveria incluir alguma ação para a loja (registros, equipamento, acesso), não só para pessoas",
+    "As 3 vagas vão para as maiores prioridades (Raul gestor, Sueli e Úrsula — criticidade 3)"
+  ],
+  "resultado_nos_testes": {
+    "v1": "2/5 expectativas",
+    "v2": "4/5 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K14",
+  "dados": {
+    "negocio": {
+      "loja": "Mercadinho Começo",
+      "segmento": "Mercadinho",
+      "dataBase": "2026-09-22",
+      "horas": 3,
+      "orcamento": 0,
+      "maxAcoes": 3,
+      "maturidade": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Raul",
+        "funcao": "Dono",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          0,
+          1,
+          1,
+          2,
+          0,
+          1
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Sueli",
+        "funcao": "Caixa",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Tadeu",
+        "funcao": "Repositor",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E04",
+        "nome": "Úrsula",
+        "funcao": "Atendimento",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          0,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        "obs": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Anotar pedidos de entrega pelo WhatsApp",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T02",
+        "nome": "Fazer lista de compras semanal",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T03",
+        "nome": "Divulgar ofertas do dia",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E01",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E02",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E03",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D04",
+        "pessoa": "E04",
+        "tarefa": "T03",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}

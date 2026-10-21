@@ -1,0 +1,290 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K03",
+  "titulo": "Loja de Roupas Estilo & Cia (pessoa com prontidão baixa em 3 diagnósticos)",
+  "descricao": "Loja de roupas. Nina (vendedora) tem prontidão baixa e foi diagnosticada em 3 tarefas. Gabi (social media) é nível 3 em C01 e C05. 3 h/semana, R$ 0, até 3 ações.",
+  "o_que_observar": [
+    "Nina deve receber UMA preparação cultural (é uma ação sobre a pessoa, não sobre cada tarefa)",
+    "A preparação de Nina não deveria ocupar todas as vagas e horas do ciclo",
+    "Teo aprende com Gabi (nível 3 em C01 e C05)",
+    "Montar vitrine é humana: sem diagnóstico ligado, nada a gerar"
+  ],
+  "resultado_nos_testes": {
+    "v1": "2/4 expectativas",
+    "v2": "4/4 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K03",
+  "dados": {
+    "negocio": {
+      "loja": "Estilo & Cia",
+      "segmento": "Vestuário",
+      "dataBase": "2026-09-22",
+      "horas": 3,
+      "orcamento": 0,
+      "maxAcoes": 3,
+      "maturidade": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Vera",
+        "funcao": "Proprietária",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          2,
+          2,
+          2,
+          3,
+          2,
+          3
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Nina",
+        "funcao": "Vendedora",
+        "gestor": "Não",
+        "prontidao": "Baixa",
+        "c": [
+          0,
+          1,
+          0,
+          3,
+          1,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Teo",
+        "funcao": "Estoquista",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          1,
+          1,
+          3,
+          1,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E04",
+        "nome": "Gabi",
+        "funcao": "Social media",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          3,
+          2,
+          1,
+          2,
+          3,
+          0
+        ],
+        "obs": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Responder clientes no Instagram",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Sim",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T02",
+        "nome": "Montar vitrine",
+        "ativa": "Sim",
+        "q1": "Sim",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T03",
+        "nome": "Conferir estoque e grade",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T04",
+        "nome": "Descrever produtos para o site",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E02",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E02",
+        "tarefa": "T03",
+        "comp": "C03",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E02",
+        "tarefa": "T04",
+        "comp": "C05",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D04",
+        "pessoa": "E03",
+        "tarefa": "T03",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D05",
+        "pessoa": "E03",
+        "tarefa": "T04",
+        "comp": "C05",
+        "meta": 2,
+        "crit": 1,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D06",
+        "pessoa": "E01",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 3,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}

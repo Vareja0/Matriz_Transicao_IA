@@ -1,0 +1,41 @@
+CENÁRIOS DE TESTE — Matriz integrada de transição de competências para IA
+=========================================================================
+
+Cada arquivo .json desta pasta é uma loja fictícia usada nos testes descritos em ../diagnostico.txt.
+Para abrir um cenário: Abrir_Matriz.html → Início → "Importar cenário (.json)" (ou Mais opções →
+"Importar cenário (.json)") → escolher o arquivo → confirmar. Os dados atuais são substituídos;
+salve uma cópia datada antes, se precisar. O Início e o Plano mostram o título do cenário e a lista
+"O que observar".
+
+Arquivos
+  A00  Mercado Aurora — exemplo original da ferramenta
+  C03  Padaria Pão Quente — fluxo completo do teste de interface (Parte 1)
+  K01-K10, K12  casos realistas (Parte 2)
+  K13-K15  casos extremos: todos dominam IA, ninguém sabe usar IA, ninguém quer mudar
+  K11 não tem arquivo: testa perfis de resposta do questionário de prontidão, não uma loja.
+  K10 já vem com a preparação cultural de Bruno concluída e a reavaliação aplicada (prontidão moderada).
+
+Formato
+  {
+    "formato": "cenario-matriz-transicao-ia",      obrigatório
+    "versao": "2.0",
+    "id": "K01",                                    curto, aparece no Início
+    "titulo": "...",
+    "descricao": "...",                             contexto da loja
+    "o_que_observar": ["...", "..."],               o que conferir no plano
+    "resultado_nos_testes": { "v1": "...", "v2": "..." },   informativo
+    "origem": "...",                                informativo
+    "dados": {
+      "negocio": {...},          loja, horas, orcamento, maxAcoes, maturidade [4 itens 0-3], limites,
+                                 maxAprendizes, cultGrupo, cultHoraExtra, intervencoes {...}
+      "equipe": [ { "id": "E01", "nome", "funcao", "gestor": "Sim|Não",
+                    "prontidao": "Baixa|Moderada|Alta", "c": [6 níveis 0-3], "prep": "" } ],
+      "tarefas": [ { "id": "T01", "nome", "ativa", "q1".."q5", "r1".."r3": "Sim|Não" } ],
+      "diagnosticos": [ { "id": "D01", "pessoa": "E01", "tarefa": "T01", "comp": "C01",
+                          "meta": 0-3, "crit": 1-3, "andamento": "Não iniciada|Em andamento|Concluída" } ]
+    }
+  }
+  Campos omitidos em "negocio" (inclusive intervenções inteiras ou só alguns valores, como
+  "intervencoes": { "TUTOR": { "custo": 40 } }) recebem os valores padrão do Mercado Aurora.
+  Entradas inválidas não impedem a importação: aparecem como pendências nas etapas, como na digitação.
+  Uma cópia salva comum (Copia_Matriz_*.json) também pode ser importada por este botão.

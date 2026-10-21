@@ -1,0 +1,294 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K15",
+  "titulo": "EXTREMO — Armazém Tradição: ninguém quer mudar",
+  "descricao": "Armazém antigo: as 5 pessoas, inclusive o dono, tiveram prontidão BAIXA. Os níveis são variados: Jonas é nível 3 em \"Conferir e decidir\" (C02) na tarefa de risco alto e não tem lacuna. 3 h/semana, R$ 0, até 3 ações.",
+  "o_que_observar": [
+    "Ninguém recebe treino técnico (todos com prontidão baixa)",
+    "Uma preparação cultural por pessoa (Seu Valdir tem 2 diagnósticos e deveria ter 1)",
+    "Jonas (nível 3, sem lacuna, risco alto) deveria receber preservação, não preparação cultural",
+    "Sem nenhum colega com prontidão moderada/alta, a preparação cultural (\"conversa e demonstração com um colega\") é inviável internamente — o plano deveria avisar",
+    "Equipe inteira resistente: preparação em grupo (uma conversa para todos) caberia em 1 h; o plano não deveria adiar pessoas por falta de horas"
+  ],
+  "resultado_nos_testes": {
+    "v1": "1/5 expectativas",
+    "v2": "5/5 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K15",
+  "dados": {
+    "negocio": {
+      "loja": "Armazém Tradição",
+      "segmento": "Armazém",
+      "dataBase": "2026-09-22",
+      "horas": 3,
+      "orcamento": 0,
+      "maxAcoes": 3,
+      "maturidade": [
+        1,
+        1,
+        2,
+        1
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Seu Valdir",
+        "funcao": "Dono",
+        "gestor": "Sim",
+        "prontidao": "Baixa",
+        "c": [
+          0,
+          2,
+          2,
+          3,
+          0,
+          2
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Jonas",
+        "funcao": "Conferente",
+        "gestor": "Não",
+        "prontidao": "Baixa",
+        "c": [
+          1,
+          3,
+          2,
+          2,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Lurdes",
+        "funcao": "Caixa",
+        "gestor": "Não",
+        "prontidao": "Baixa",
+        "c": [
+          1,
+          2,
+          1,
+          3,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E04",
+        "nome": "Nelson",
+        "funcao": "Balcão",
+        "gestor": "Não",
+        "prontidao": "Baixa",
+        "c": [
+          0,
+          1,
+          1,
+          3,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E05",
+        "nome": "Wagner",
+        "funcao": "Entregas",
+        "gestor": "Não",
+        "prontidao": "Baixa",
+        "c": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          0
+        ],
+        "obs": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Conferir mercadoria recebida",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Não"
+      },
+      {
+        "id": "T02",
+        "nome": "Controlar fiado e cobranças",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T03",
+        "nome": "Avisar clientes sobre chegada de produtos",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E01",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E02",
+        "tarefa": "T01",
+        "comp": "C02",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E03",
+        "tarefa": "T02",
+        "comp": "C03",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D04",
+        "pessoa": "E04",
+        "tarefa": "T03",
+        "comp": "C01",
+        "meta": 1,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D05",
+        "pessoa": "E05",
+        "tarefa": "T03",
+        "comp": "C01",
+        "meta": 1,
+        "crit": 1,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D06",
+        "pessoa": "E01",
+        "tarefa": "T03",
+        "comp": "C05",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}

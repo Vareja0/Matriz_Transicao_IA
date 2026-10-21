@@ -1,0 +1,216 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K08",
+  "titulo": "Supermercado Bom Preço (prontidão baixa sem lacuna, tarefa de alto risco)",
+  "descricao": "Zé (conferente, prontidão baixa) já domina a conferência (nível 3, meta 3), mas a tarefa tem risco alto. Há duas ações de prioridade máxima (6) para outras pessoas. Só 2 vagas.",
+  "o_que_observar": [
+    "Zé não tem lacuna: a ação adequada é preservação (registrar e praticar sem IA), não preparação para treino técnico",
+    "As duas ações de prioridade 6 (Luan e Íris) entram no ciclo"
+  ],
+  "resultado_nos_testes": {
+    "v1": "0/2 expectativas",
+    "v2": "2/2 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K08",
+  "dados": {
+    "negocio": {
+      "loja": "Supermercado Bom Preço",
+      "segmento": "Supermercado",
+      "dataBase": "2026-09-22",
+      "horas": 6,
+      "orcamento": 0,
+      "maxAcoes": 2,
+      "maturidade": [
+        3,
+        2,
+        2,
+        3
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Zé",
+        "funcao": "Conferente",
+        "gestor": "Não",
+        "prontidao": "Baixa",
+        "c": [
+          1,
+          3,
+          2,
+          2,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Íris",
+        "funcao": "Gerente",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          1,
+          2,
+          3,
+          2,
+          1,
+          3
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Luan",
+        "funcao": "Compras",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          1,
+          1,
+          1,
+          2,
+          1,
+          0
+        ],
+        "obs": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Conferir notas fiscais na entrada",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Não"
+      },
+      {
+        "id": "T02",
+        "nome": "Prever demanda para compras",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Sim",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E01",
+        "tarefa": "T01",
+        "comp": "C02",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E03",
+        "tarefa": "T02",
+        "comp": "C03",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E02",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}

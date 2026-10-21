@@ -1,0 +1,258 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K07",
+  "titulo": "Mercearia Dois Irmãos (uma só especialista para 4 aprendizes)",
+  "descricao": "Ana é a única nível 3 em C01. Quatro colegas têm lacuna em C01. Recursos folgados: 10 h/semana, até 5 ações.",
+  "o_que_observar": [
+    "Todos aprendem com Ana (pares)",
+    "Ana não deveria ficar com 4 aprendizes ao mesmo tempo (capacidade individual da colega)"
+  ],
+  "resultado_nos_testes": {
+    "v1": "1/2 expectativas",
+    "v2": "1/2 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K07",
+  "dados": {
+    "negocio": {
+      "loja": "Mercearia Dois Irmãos",
+      "segmento": "Mercearia",
+      "dataBase": "2026-09-22",
+      "horas": 10,
+      "orcamento": 0,
+      "maxAcoes": 5,
+      "maturidade": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Ana",
+        "funcao": "Sócia",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          3,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Beto",
+        "funcao": "Sócio",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          1,
+          2,
+          2,
+          3,
+          1,
+          2
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Cris",
+        "funcao": "Caixa",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          1,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E04",
+        "nome": "Dani",
+        "funcao": "Repositor",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          0,
+          1,
+          2,
+          2,
+          0,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E05",
+        "nome": "Edu",
+        "funcao": "Entregas",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          1,
+          1,
+          1,
+          2,
+          0,
+          0
+        ],
+        "obs": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Responder pedidos pelo WhatsApp",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T02",
+        "nome": "Lançar notas de compra",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Sim",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E02",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E03",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E04",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D04",
+        "pessoa": "E05",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}

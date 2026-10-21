@@ -1,0 +1,381 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K10",
+  "titulo": "Mercado Aurora, 30 dias depois (ciclo de reavaliação)",
+  "descricao": "Continuação do exemplo: Bruno concluiu a preparação cultural (D02 marcado \"Concluída\") e, ao reaplicar o formulário, subiu para prontidão Moderada. A lacuna dele em C01 continua (nível 0, meta 2).",
+  "o_que_observar": [
+    "Depois da preparação e com prontidão moderada, Bruno deveria receber o treino técnico da lacuna em C01",
+    "A vaga liberada pela preparação concluída é usada (pelo menos 3 ações no ciclo)"
+  ],
+  "resultado_nos_testes": {
+    "v1": "1/2 expectativas",
+    "v2": "2/2 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K10",
+  "dados": {
+    "negocio": {
+      "loja": "Mercado Aurora (simulado)",
+      "segmento": "Minimercado de bairro",
+      "dataBase": "2026-09-22",
+      "horas": 3,
+      "orcamento": 80,
+      "maxAcoes": 3,
+      "maturidade": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Helena",
+        "funcao": "Proprietária-gestora",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          1,
+          2,
+          2,
+          3,
+          1,
+          1
+        ],
+        "obs": "",
+        "prep": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Bruno",
+        "funcao": "Atendimento e vendas",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          0,
+          1,
+          1,
+          3,
+          1,
+          0
+        ],
+        "obs": "",
+        "prep": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Carla",
+        "funcao": "Estoque e reposição",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          1,
+          2,
+          1,
+          2,
+          0,
+          0
+        ],
+        "obs": "",
+        "prep": ""
+      },
+      {
+        "id": "E04",
+        "nome": "Diego",
+        "funcao": "Marketing e mídias",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          2,
+          2,
+          3,
+          2,
+          1,
+          1
+        ],
+        "obs": "",
+        "prep": ""
+      },
+      {
+        "id": "E05",
+        "nome": "Elisa",
+        "funcao": "Caixa e retaguarda",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          1,
+          3,
+          2,
+          3,
+          0,
+          0
+        ],
+        "obs": "",
+        "prep": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Responder dúvidas no WhatsApp",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Não"
+      },
+      {
+        "id": "T02",
+        "nome": "Planejar pedido ao fornecedor",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T03",
+        "nome": "Criar conteúdo para redes sociais",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T04",
+        "nome": "Conferir lançamentos do caixa",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T05",
+        "nome": "Negociar reclamação sensível",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Sim",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T06",
+        "nome": "Analisar indicadores de vendas",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Sim",
+        "r3": "Sim"
+      },
+      {
+        "id": "T07",
+        "nome": "Preparar roteiro de capacitação",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T08",
+        "nome": "Conferir produtos na prateleira",
+        "ativa": "Sim",
+        "q1": "Sim",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Não",
+        "r2": "Sim",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E01",
+        "tarefa": "T06",
+        "comp": "C01",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": "Entrada simulada"
+      },
+      {
+        "id": "D02",
+        "pessoa": "E02",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": "Entrada simulada"
+      },
+      {
+        "id": "D03",
+        "pessoa": "E03",
+        "tarefa": "T02",
+        "comp": "C03",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": "Entrada simulada"
+      },
+      {
+        "id": "D04",
+        "pessoa": "E04",
+        "tarefa": "T03",
+        "comp": "C05",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": "Entrada simulada"
+      },
+      {
+        "id": "D05",
+        "pessoa": "E05",
+        "tarefa": "T04",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": "Entrada simulada"
+      },
+      {
+        "id": "D06",
+        "pessoa": "E01",
+        "tarefa": "T07",
+        "comp": "C06",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": "Entrada simulada"
+      },
+      {
+        "id": "D07",
+        "pessoa": "E01",
+        "tarefa": "T05",
+        "comp": "C04",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": "Tarefa humana"
+      },
+      {
+        "id": "D08",
+        "pessoa": "E05",
+        "tarefa": "T02",
+        "comp": "C02",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": "Sem lacuna, com preservação"
+      }
+    ]
+  }
+}

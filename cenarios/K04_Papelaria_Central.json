@@ -1,0 +1,278 @@
+{
+  "formato": "cenario-matriz-transicao-ia",
+  "versao": "2.0",
+  "id": "K04",
+  "titulo": "Papelaria Central (intervenções pagas e orçamento curto)",
+  "descricao": "Papelaria. Mentoria por IA custa R$ 40/ciclo (assinatura); as demais são gratuitas. Orçamento R$ 50, 5 h/semana, até 4 ações. Ninguém é nível 3 em C01, C02 ou C05.",
+  "o_que_observar": [
+    "Rui em tarefa de automação (lacuna 1): redesenho gradual gratuito vence a mentoria paga",
+    "Ivo com lacuna 2 em C01: experimentação assistida (gratuita)",
+    "Orçamento R$ 50 permite só uma mentoria paga; ela deve ir para a ação de maior prioridade que só tem mentoria como opção",
+    "Precificação tem risco 2 → preservação para Duda e Olga",
+    "Ações adiadas por orçamento devem dizer \"Orçamento insuficiente\" (não \"limite de ações\")"
+  ],
+  "resultado_nos_testes": {
+    "v1": "5/5 expectativas",
+    "v2": "5/5 expectativas"
+  },
+  "origem": "diagnostico.txt, Partes 2 e 3, caso K04",
+  "dados": {
+    "negocio": {
+      "loja": "Papelaria Central",
+      "segmento": "Papelaria",
+      "dataBase": "2026-09-22",
+      "horas": 5,
+      "orcamento": 50,
+      "maxAcoes": 4,
+      "maturidade": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "riscoAlto": 2,
+      "prontBaixa": 1,
+      "prontAlta": 2,
+      "presHoras": 0.5,
+      "maxAprendizes": 2,
+      "cultGrupo": "Sim",
+      "cultHoraExtra": 0.25,
+      "matAndamento": "Não iniciada",
+      "intervencoes": {
+        "CULT": {
+          "nome": "Preparação cultural",
+          "horas": 1,
+          "semanas": 2,
+          "custo": 0,
+          "participantes": "Pessoa(s) + colega",
+          "compartilhado": false
+        },
+        "PARES": {
+          "nome": "Aprendizagem entre pares",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXP": {
+          "nome": "Experimentação assistida",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "TUTOR": {
+          "nome": "Mentoria por IA",
+          "horas": 0.5,
+          "semanas": 4,
+          "custo": 40,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "RED": {
+          "nome": "Redesenho gradual",
+          "horas": 0.5,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Pessoa",
+          "compartilhado": false
+        },
+        "PRES": {
+          "nome": "Preservação de competências",
+          "horas": 0,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + colega",
+          "compartilhado": false
+        },
+        "EXT": {
+          "nome": "Apoio externo",
+          "horas": 1,
+          "semanas": 4,
+          "custo": 0,
+          "participantes": "Pessoa + apoio externo",
+          "compartilhado": false
+        },
+        "MAT": {
+          "nome": "Elevar maturidade digital",
+          "horas": 1,
+          "semanas": 8,
+          "custo": 0,
+          "participantes": "Gestor",
+          "compartilhado": false
+        }
+      }
+    },
+    "equipe": [
+      {
+        "id": "E01",
+        "nome": "Olga",
+        "funcao": "Proprietária",
+        "gestor": "Sim",
+        "prontidao": "Alta",
+        "c": [
+          2,
+          2,
+          2,
+          3,
+          1,
+          2
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E02",
+        "nome": "Rui",
+        "funcao": "Balcão",
+        "gestor": "Não",
+        "prontidao": "Moderada",
+        "c": [
+          1,
+          2,
+          2,
+          2,
+          1,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E03",
+        "nome": "Ivo",
+        "funcao": "Gráfica rápida",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          0
+        ],
+        "obs": ""
+      },
+      {
+        "id": "E04",
+        "nome": "Duda",
+        "funcao": "Compras",
+        "gestor": "Não",
+        "prontidao": "Alta",
+        "c": [
+          1,
+          1,
+          3,
+          2,
+          1,
+          0
+        ],
+        "obs": ""
+      }
+    ],
+    "tarefas": [
+      {
+        "id": "T01",
+        "nome": "Emitir orçamento de listas escolares",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Sim",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T02",
+        "nome": "Atender encomendas de impressão por e-mail",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Não",
+        "q4": "Não",
+        "q5": "Sim",
+        "r1": "Não",
+        "r2": "Não",
+        "r3": "Sim"
+      },
+      {
+        "id": "T03",
+        "nome": "Precificar produtos",
+        "ativa": "Sim",
+        "q1": "Não",
+        "q2": "Não",
+        "q3": "Sim",
+        "q4": "Não",
+        "q5": "Não",
+        "r1": "Sim",
+        "r2": "Sim",
+        "r3": "Sim"
+      }
+    ],
+    "diagnosticos": [
+      {
+        "id": "D01",
+        "pessoa": "E02",
+        "tarefa": "T01",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D02",
+        "pessoa": "E03",
+        "tarefa": "T02",
+        "comp": "C01",
+        "meta": 2,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D03",
+        "pessoa": "E03",
+        "tarefa": "T02",
+        "comp": "C05",
+        "meta": 3,
+        "crit": 2,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D04",
+        "pessoa": "E04",
+        "tarefa": "T03",
+        "comp": "C02",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D05",
+        "pessoa": "E01",
+        "tarefa": "T03",
+        "comp": "C02",
+        "meta": 3,
+        "crit": 3,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      },
+      {
+        "id": "D06",
+        "pessoa": "E02",
+        "tarefa": "T02",
+        "comp": "C05",
+        "meta": 2,
+        "crit": 1,
+        "andamento": "Não iniciada",
+        "evidencia": ""
+      }
+    ]
+  }
+}
